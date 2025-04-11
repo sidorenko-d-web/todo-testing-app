@@ -17,7 +17,7 @@ export const TaskItem: FC<props> = memo(({ name, date, priority, id, isComplete 
       <span className={styles[priority]}>{priority}</span>
       <div className={styles.controls}>
         {!isComplete && <button onClick={() => completeTask(id)}>✅</button>}
-        <button onClick={() => toggleModal({ editId: id, mode: 'edit' })}>✍</button>
+        {!isComplete && <button onClick={() => toggleModal({ editId: id, mode: 'edit' })}>✍</button> }
         <button onClick={() => deleteTask({ id })}>❌</button>
       </div>
     </div>
