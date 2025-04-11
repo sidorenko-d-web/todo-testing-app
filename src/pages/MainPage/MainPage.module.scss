@@ -1,0 +1,21 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.mainWrapper {
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  h1 {
+    font-size: 40px;
+  }
+
+  .taskWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;;
+  }
+}

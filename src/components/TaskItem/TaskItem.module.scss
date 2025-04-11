@@ -1,0 +1,49 @@
+@use '../../assets/styles/index.scss' as *;
+
+.taskItem {
+  display: flex;
+  border: 1px solid $border-main-white;
+  border-radius: 6px;
+  align-items: center;
+  background-color: $bg-secondary;
+
+  &.isComplete {
+    background-color: $bg-green;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 0.5rem 2rem;
+    text-transform: capitalize;
+
+    &:first-child {
+      justify-content: start;
+      flex: 5;
+    }
+
+    &.high {
+      background-color: $bg-red;
+    }
+    &.medium {
+      background-color: $bg-yellow;
+    }
+    &.low {
+      background-color: $bg-green;
+    }
+  }
+
+  .controls {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

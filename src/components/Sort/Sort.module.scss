@@ -1,0 +1,17 @@
+.sortWrapper {
+  display: flex;
+  width: 100%;
+
+  .sortItem {
+    flex: 1;
+
+    &:first-child {
+      text-align: left;
+      flex: 5;
+      border-radius: 6px 0 0 6px;
+    }
+    &:last-child {
+      border-radius: 0 6px 6px 0;
+    }
+  }
+}

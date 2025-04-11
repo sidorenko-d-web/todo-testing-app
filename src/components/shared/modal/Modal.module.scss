@@ -1,0 +1,39 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000000aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper{
+    background-color: $bg-main;
+    border: $border-main-white 1px solid;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 60vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input{
+      background-color: transparent;
+      border: $color-main 2px solid;
+      padding: 0.5rem 1rem;
+      font-size: 16px;
+      border-radius: 6px;
+      color: $color-main;
+    }
+
+    .buttons{
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}

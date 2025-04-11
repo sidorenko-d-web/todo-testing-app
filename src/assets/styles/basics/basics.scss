@@ -1,0 +1,13 @@
+@use '../colors/colors.scss' as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: $bg-main;
+  color: $color-main;
+}

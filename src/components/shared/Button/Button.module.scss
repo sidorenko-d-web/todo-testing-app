@@ -1,0 +1,51 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.sort {
+  padding: 0.5rem 2rem;
+  border-radius: 0;
+  background-color: transparent;
+  border: $border-main-white 1px solid;
+  color: $color-main;
+  font-size: 16px;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      background-color: $bg-secondary;
+    }
+  }
+}
+
+.primary {
+  background-color: $color-main;
+  color: $bg-main;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 500;
+
+  &:hover{
+    background-color: $border-main-white;
+  }
+}
+
+
+.secondary {
+  background-color: transparent;
+  color: $color-main ;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  border: 2px solid $color-main;
+
+  &:hover{
+    background-color: $border-main-white;
+  }
+}
